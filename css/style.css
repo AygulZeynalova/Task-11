@@ -1,0 +1,50 @@
+html
+body {
+    margin: 0;
+    padding: 0;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: teal;
+    height: 60px;
+}
+.Header .right b {
+    margin-right: 60px; /* Adjust this value to add more space */
+}
+
+.Header .left {
+    margin-left:50px;
+    
+}
+.Header b{
+    color:rgb(129, 222, 222)
+}
+.page {
+    background-color: #f0d2b4;
+    height: 800px;
+    width: 230px;
+    align-items: center;
+    text-align: center;
+    
+}
+.page b{
+    margin-left: -20px;
+    text-align: left;
+    align-items: center;
+    
+}
+.page hr {
+    border: none;
+    height: 1px; 
+    width: 200px;
+    background-color: black
+  }
+.main  {
+ 
+    background-color: #dcc26c;
+    align-items: center;
+   display: flex;
+}
+
