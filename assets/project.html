@@ -3,63 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d731656279.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../css/style.css">
     <title>My Homework</title>
-
-
-    <script src="https://kit.fontawesome.com/3246bca4a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="Header">
-        <b class="left">Handwere Handler<i class="fa fa-screwdriver-wrench"></i></b>
-        <div class="right">
-           <b>My Products</b>
-           <b>Add New Product</b>
-           <b>Checkout<i class="fa fa-cart-shopping"></i></b>
+    <header class="header">
+        <div class="header-content">
+          <span>Hardware Handler <i class="fa fa-screwdriver-wrench"></i></span>
+          <div class="header-buttons">
+            <button class="header-button">My Products</button>
+            <button class="header-button">Add New Product</button>
+            <button class="header-button">Checkout <i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
         </div>
-     </header>
-     <main class="main">
-        <div class="menu">
+        </div>
   
-          
-        </div>
-        <div class="page">
-            <form class="data-form"></form>
+    </header> 
+
+    <div class="main">
+        <div class="sidebar">
+            <strong class="sidebar-title">Filter by Department</strong>
+            <hr/>
+            <div class="check-container">
+                <label class="list">Hand Tools<input type="checkbox" name="lists"></label> <br>
+                <label class="list">Power Tools<input type="checkbox" name="lists"></label> <br>
+                <label class="list">Plumbing<input type="checkbox" name="lists"></label>
+            </div>
             <br>
-            <b>Filter by Department</b>
-            <hr>
-            <label>Hand Tools</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Power Tools</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Plumbing</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <b>Filter by Brand</b>
-            <hr>
-            <label>Bubble Scrubbers</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Cinncinnati Tools</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>DeMalt</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Don Leere</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Momo</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Pie-Obi</label><input type="checkbox" name="tools"/>
-            <br>
-            <br>
-            <label>Posch</label><input type="checkbox" name="tools"/>
-        </div>
-    </main>
+            <strong class="sidebar-title">Filter by Brand</strong>
+            <hr/>
+            <div class="check-container">
+                <label class="list">Bubble Scrubbers<input type="checkbox" name="lists"></label> <br>
+                <label class="list">Cinncinnati Tools<input type="checkbox" name="lists"></label> <br>
+                <label class="list">DeMalt<input type="checkbox" name="lists"></label><br>
+                <label class="list">Don Leere<input type="checkbox" name="lists"></label><br>
+                <label class="list">Momo<input type="checkbox" name="lists"></label><br>
+                <label class="list">Pie-Obi<input type="checkbox" name="lists"></label><br>
+                <label class="list">Posch<input type="checkbox" name="lists"></label>
+
+            </div>    
+        </div>  
+
+
 
 </body>
 </html>
