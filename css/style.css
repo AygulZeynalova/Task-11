@@ -1,83 +1,100 @@
-html
-body{
-    margin: 0px;
-    padding: 0px;
-    flex-direction: column;
-    position: relative;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: teal;
-    height: 60px;
-}
- .header-content {
-    margin-left: 80px;
-    color: rgb(145, 226, 226);
-    font-size: large;
-    display: flex;
-    align-items: center;
- 
-}
-.header-buttons {
-    display: flex;
-    gap: 10px;
-    margin-left: 900px;
 
-   
-}
-
-.header-button {
-    font-size: 16px;
-    background-color: teal;
-    border: none;
-    color: rgb(145, 226, 226);
-    padding: 10px;
-    transition: background-color 0.3s ease; 
-    border-radius: 5px;
-}
-
-.header-button:hover {
-    background-color: #c0e6f3; 
-    color: teal;
-}
-.main {
-background-color: bisque;
-width: 15%;
-height: 778px;
-border: 20px;
-text-align:start;
-
-}
-
-.sidebar-title {
-    align-self: start;
-    margin-left: 5px;
-    
-}
-.list {
-    display: block;
-    text-align: justify;
+  html
+  body {
+    margin: 0;
+    padding: 0;
   
-}
-hr {
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #02616B;
+    color: #13ADB4;
+    padding: 20px;
+    font-weight: bold;
+  }
+  .header-content {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .header-buttons {
+    margin-left:700px; 
+  }
+  
+  .header-button {
+    background-color: #02616B;
+    color: #13ADB4;
     border: none;
-    border-top: 1px solid black;
-}
-.content {
-    text-align: center;
-    margin-left: 1000px;
-    background-color: aqua;
-    margin-top: 20px; /* Adjust as needed */
-    margin-left: 50%; /* Adjust as needed */
-}
-
-
-
-
-
-
-
-
-
+    padding: 10px 8px ;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 80px;
+    
+  }
+  
+  .header-button:hover {
+    background-color: #B3FFFF;
+  }
+  .main {
+    display: flex; 
+    width: 100%;
+    min-height: 100vh;
+  
+  }
+  .sidebar {
+    background-color: #FED0AD;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    width: 200px; 
+  }
+  
+  
+  .sidebar-title {
+    margin-bottom: 10px;
+  }
+  
+  .header .fa-screwdriver-wrench {
+    margin-left: 5px; 
+    
+  }
+  
+  hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid black ;
+  }
+  .check-container {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .list {
+    display: block;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .list input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .main::after {
+    content: "";
+    display: table;
+    clear: both; 
+    
+    }
+    .content {
+        background-color: #FDE5A1;
+        padding: 15px;
+        flex: 1; 
+        text-align: center;
+        font-weight: bold;
+        padding-right: 160px;
+      }
