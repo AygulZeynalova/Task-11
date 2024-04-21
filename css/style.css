@@ -147,6 +147,8 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px; 
+  width: -130px;
+
 }
 
 .span-name{
@@ -155,7 +157,7 @@ hr {
 
 .product p {
   margin-bottom: 15px; 
-=======
+
 
 .main {
 display: flex; 
@@ -262,6 +264,7 @@ margin-top: 20px;
 border-radius: 5px;
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 
 
@@ -293,3 +296,4 @@ position: absolute; /* Абсолютное позиционирование */
 bottom: 10px; /* Отступ от нижнего края блока */
 right: 10px; /* Отступ от правого края блока */
 }
+
