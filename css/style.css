@@ -1,100 +1,295 @@
+.main {
+  display: flex; 
+  width: 100%;
+  min-height: 100vh;
 
-  html
-  body {
-    margin: 0;
-    padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Arial", sans-serif;
+}
+
+.sidebar {
+  background-color: #FED0AD;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  width: 200px; 
+}
+
+.content {
+  background-color: #FDE5A1;
+  padding: 15px;
+  flex: 1; 
+  text-align: center;
+  font-weight: bold;
+  padding-right: 160px;
+}
+
+.sidebar-title {
+  margin-bottom: 10px;
+}
+
+.header .fa-screwdriver-wrench {
+  margin-left: 5px; 
   
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #02616B;
-    color: #13ADB4;
-    padding: 20px;
-    font-weight: bold;
-  }
-  .header-content {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-  }
+}
+
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 2px solid black ;
+}
+
+.check-container {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.list {
+  display: block;
+  margin-bottom: 1px;
+  cursor: pointer;
+  font-weight:lighter;
+}
+
+.list input[type="checkbox"] {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  background-color: #02616B;
+  color: #13ADB4;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.header-button {
+  background-color: #02616B;
+  color: #13ADB4;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.header-button:hover {
+  background-color: #B3FFFF;
+}
+
+.product {
+  position: relative;
+  background-color: #C9B16E;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+
+.product hr {
+  border: none;
+  border-top: 3px solid black;
+  margin: 10px 0;
+}
+
+.product span {
+  font-weight: bold;
+}
+
+.product p {
+  margin: 5px 0;
+  font-weight:lighter;
+  margin-bottom: 40px; 
+}
+
+.position-p{
+  text-align: left; 
+  padding-bottom: 20px;
+}
+
+.product button {
+  background-color: #E24E2D;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
   
-  .header-buttons {
-    margin-left:700px; 
-  }
-  
-  .header-button {
-    background-color: #02616B;
-    color: #13ADB4;
-    border: none;
-    padding: 10px 8px ;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 80px;
-    
-  }
-  
-  .header-button:hover {
-    background-color: #B3FFFF;
-  }
-  .main {
-    display: flex; 
-    width: 100%;
-    min-height: 100vh;
-  
-  }
-  .sidebar {
-    background-color: #FED0AD;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    width: 200px; 
-  }
-  
-  
-  .sidebar-title {
-    margin-bottom: 10px;
-  }
-  
-  .header .fa-screwdriver-wrench {
-    margin-left: 5px; 
-    
-  }
-  
-  hr {
-    margin: 10px 0;
-    border: none;
-    border-top: 2px solid black ;
-  }
-  .check-container {
-    margin-bottom: 10px;
-    padding-left: 10px;
-  }
-  
-  .list {
-    display: block;
-    margin-bottom: 1px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .list input[type="checkbox"] {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  
-  .main::after {
-    content: "";
-    display: table;
-    clear: both; 
-    
-    }
-    .content {
-        background-color: #FDE5A1;
-        padding: 15px;
-        flex: 1; 
-        text-align: center;
-        font-weight: bold;
-        padding-right: 160px;
-      }
+}
+
+.product button:hover {
+  background-color: #820909;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+
+.span-name{
+  text-align: left;
+}
+
+.product p {
+  margin-bottom: 15px; 
+=======
+
+.main {
+display: flex; 
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: "Arial", sans-serif;
+}
+
+.sidebar {
+background-color: #FED0AD;
+padding: 20px;
+border-right: 1px solid #ddd;
+width: 200px; 
+}
+
+.content {
+background-color: #FDE5A1;
+padding: 20px;
+flex: 1; 
+text-align: center; 
+font-weight: bold;
+}
+
+.sidebar-title {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.header .fa-screwdriver-wrench {
+margin-left: 5px; 
+}
+
+hr {
+margin: 10px 0;
+border: none;
+border-top: 2px solid black ;
+}
+
+.check-container {
+margin-bottom: 10px;
+padding-left: 10px;
+}
+
+.list {
+display: block;
+margin-bottom: 1px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.list input[type="checkbox"] {
+margin-right: 5px;
+margin-left: 5px;
+}
+
+.main::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #02616B;
+color: #13ADB4;
+padding: 20px;
+font-weight: bold;
+}
+
+.header-content {
+display: flex;
+align-items: center;
+}
+
+.header-buttons {
+margin-left:640px; 
+}
+
+.header-button {
+background-color: #02616B;
+color: #13ADB4;
+border: none;
+padding: 8px 16px;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+margin-left: 10px;
+}
+
+.header-button:hover {
+background-color: #B3FFFF;
+}
+
+.product {
+position: relative;
+background-color: #C9B16E;
+padding: 20px;
+margin-top: 20px;
+border-radius: 5px;
+display: flex;
+justify-content: space-between;
+}
+
+
+.product hr {
+border: none;
+border-top: 3px solid black;
+margin: 10px 0;
+}
+
+.product span {
+font-weight: bold;
+}
+
+.product p {
+margin: 5px 0;
+font-weight:lighter;
+margin-bottom: 30px; 
+}
+
+.product button {
+background-color: #E24E2D;
+color: #fff;
+border: none;
+padding: 5px 16px;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+position: absolute; /* Абсолютное позиционирование */
+bottom: 10px; /* Отступ от нижнего края блока */
+right: 10px; /* Отступ от правого края блока */
+}
